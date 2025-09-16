@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/Portfolie",
-    assetPrefix: "/Portfolie/",
+    basePath: "/Portfolio",
+    assetPrefix: "/Portfolio/",
     output: "export",
     reactStrictMode: true,
     
