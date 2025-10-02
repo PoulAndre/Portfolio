@@ -54,7 +54,7 @@ function container2({byttContainer}) {
                 <div className='flex flex-row h-full m-10'>
                   {/*Venstre side (Bilde)*/}
                   <div className='flex w-2/3 h-full justify-center items-center'>
-                    <div className='flex w-90 h-130 bg-[#D1CAC2] rounded-lg'>
+                    <div className='flex w-90 h-130 bg-[#D1CAC2] rounded-lg border-2 border-black'>
                       {/*HER KOMMER BILDE*/ }
                       <Image src={Figur} alt='Figur' className='object-cover'></Image>
                     </div>
@@ -62,9 +62,12 @@ function container2({byttContainer}) {
                   {/*Høyre side (Tekst)*/}
                   <div className='w-full h-full'>
                     <h2 className='text-xl font-mono mt-30 text-center text-black'>Så hvem er jeg?</h2>
-                    <p className='text-lg font-mono ml-20 mr-20 mt-10 text-center text-black'>Jeg heter Poul André Grevsen Røinaas, er 25 år gammel, og er født og oppvokst i Kristiansand, hvor jeg fortsatt er bosatt
+                    <p className='text-lg font-mono mr-20 mt-10 text-left text-black'>Jeg heter Poul André Grevsen Røinaas, er 25 år gammel, og er født og oppvokst i Kristiansand, hvor jeg fortsatt er bosatt.
                     </p>
-                    <p className='text-lg font-mono ml-20 mr-20 mt-10 text-center text-black'>I fritiden liker jeg å trene, game, spille fotball, frisbeegolf og være sosial</p>  
+                    <p className='text-lg font-mono mr-20 mt-10 text-left text-black'>Jeg vil beskrive meg selv som en rolig type. Jeg bruker mye av fritiden min på å være aktiv og sosial. Jeg er veldig glad i trening, gaming, sosiale sammenkomster, lage musikk og spille frisbeegolf.</p>
+                    <p className='text-lg font-mono mr-20 mt-10 text-left text-black'>
+Som person på jobb er jeg strukturert, pliktoppfyllende. Jeg liker å gjøre ting ordentlig, og jeg trives best når jeg kan bidra til et godt arbeidsmiljø. Jeg er ikke den som roper høyest, men jeg er alltid til stede, tar ansvar og holder hodet kaldt selv når det er travelt.
+For meg handler det både om å utvikle meg selv og om å skape trygghet og samarbeid rundt meg. Jeg tror at kombinasjonen av å være rolig, tilpasningsdyktig og målrettet er det som best beskriver meg både som person og som kollega.</p>  
                     
                   </div>
 

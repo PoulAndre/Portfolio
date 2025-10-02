@@ -13,9 +13,9 @@ function container3({byttContainer}) {
    const [valgtProsjekt, setValgtProsjekt] = useState(0);
   
     const prosjekt = [
-    {tittel: 'Kalkulator', innhold: 'Dette er en kalkulator-app jeg har laget.', link: 'https://poulandre.github.io/Kalkulator/'},
-    {tittel: 'Quiz', innhold: 'Dette er en QUIZ-app jeg har laget. Test din allmennkunnskap på min quiz, UTEN å GOOGLE', link: 'https://poulandre.github.io/quiz-app/'},
-    {tittel: 'Huskespill', innhold: 'Dette er et huskespill-app jeg har laget. Sjekk om hukommelsen sitter!!! sånn litt ihvertfall', link: 'https://www.youtube.com/'}
+    {tittel: 'Kalkulator', innhold1: 'Dette er en kalkulator-app jeg har laget, som skal etterligne apple sin.', innhold2: 'Kodet i JavaScript', link: 'https://poulandre.github.io/Kalkulator/'},
+    {tittel: 'Quiz', innhold1: 'Dette er en QUIZ-app jeg har laget. Her har jeg blitt inspirert selv.', innhold2:'Test din allmennkunnskap på min quiz, UTEN å GOOGLE', link: 'https://poulandre.github.io/quiz-app/'},
+    {tittel: 'Huskespill', innhold1: 'Dette er et huskespill-app jeg holder på å lage.', innhold2:'Sjekk om hukommelsen sitter! - Når den er ferdig', link: 'https://www.youtube.com/'}
   ]
 
  function prosjektLink() {
@@ -39,11 +39,11 @@ function container3({byttContainer}) {
               <Image src={meg1} alt='meg' className='w-40 h-40 rounded-full object-cover scale-80 '/>
            
             </div>
-              <p className='font-mono ml-3 text-lg text-black  text-shadow-sm'>Poul André Grevsen Røinaas</p>
-              <p className='font-mono ml-3 text-black  text-shadow-sm'>Søker etter utvikler jobb</p>
+              <p className='font-mono ml-3 text-lg text-black'>Poul André Grevsen Røinaas</p>
+              <p className='font-mono ml-3 text-black'>Søker etter utvikler jobb</p>
               
               <button onClick={() => byttContainer(1)} className='w-full h-10 mt-5 hover:bg-[#B0A99F]'>
-                <p className='text-md font-mono text-left text-black ml-3 '>Home</p>
+                <p className='text-md font-mono text-left text-black ml-3'>Home</p>
               </button>
 
               <button onClick={() => byttContainer(2)} className='w-full h-10 hover:bg-[#B0A99F]'>
@@ -116,7 +116,8 @@ function container3({byttContainer}) {
                             <p className='text-lg font-mono text-black'>{valgtProsjekt.tittel}</p>
 
                               <div className='w-2/3 h-50'>
-                                <p className='text-lg font-mono text-black'>{valgtProsjekt.innhold}</p>
+                                <p className='text-lg font-mono text-black'>{valgtProsjekt.innhold1}</p>
+                                <p className='text-lg font-mono text-black'>{valgtProsjekt.innhold2}</p>
                               </div>
                                 <div className='w-2/3 h-10 justify-center text-center'>
                                   {prosjektLink()}
